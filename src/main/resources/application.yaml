@@ -1,3 +1,22 @@
 spring:
   datasource:
-    url:
+    url: jdbc:mysql://localhost:3306/spring_app
+    username: maurice
+    password: aspiration__
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
+  redis:
+    database: 0
+    host: localhost
+    port: 6379
+    timeout: 60000
+    password: Password123#@!
+
+  cache:
+    type: redis
+
+
